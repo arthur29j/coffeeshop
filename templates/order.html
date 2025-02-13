@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/order" method="post">
+        <input type="text" name="customer_name" placeholder="ENTER NAME">
+        <select name="drink">
+            <option value="">- Choose drink -</option>
+            {% for d in drinks -%}
+            <option value="{{ d }}">{{ d | capitalize }}</option>
+            {% endfor %}
+        </select>
+        <select name="flavor">
+            <option value="">- Choose flavor -</option>
+            {% for f in flavors -%}
+            <option value="{{ f }}">{{ f | capitalize }}</option>
+            {% endfor %}
+        </select>
+        <select name="topping">
+            <option value="">- Choose topping -</option>
+            {% for t in toppings -%}
+            <option value="{{ t }}">{{ t | capitalize }}</option>
+            {% endfor %}
+        </select>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

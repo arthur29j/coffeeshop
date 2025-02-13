@@ -1,0 +1,20 @@
+[
+    {
+        "customer_name": "Arthurio",
+        "drink": "chocolate",
+        "flavor": "hazelnut",
+        "topping": "cinnamon"
+    },
+    {
+        "customer_name": "",
+        "drink": "chocolate",
+        "flavor": "vanilla",
+        "topping": "chocolate"
+    },
+    {
+        "customer_name": "Arthurio",
+        "drink": "water",
+        "flavor": "",
+        "topping": ""
+    }
+]

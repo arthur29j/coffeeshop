@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Customer name</th>
+            <th>Drink</th>
+            <th>Flavor</th>
+            <th>Topping</th>
+        </tr>
+        {% for o in orders -%}
+        <tr>
+            <td>{{ o['customer_name'] }}</td>
+            <td>{{ o['drink'] }}</td>
+            <td>{{ o['flavor'] }}</td>
+            <td>{{ o['topping'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

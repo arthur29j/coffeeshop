@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>{{ new_order['customer_name'] }}, thanks for your order!</h1>
+
+    <p>Drink: <strong>{{ new_order['drink'] }}</strong></p>
+    <p>Flavor: <strong>{{ new_order['flavor'] }}</strong></p>
+    <p>Topping: <strong>{{ new_order['topping'] }}</strong></p>
+
+    <form action="/order">
+        <input type="submit" value="New order" />
+    </form>
+</body>
+</html>
