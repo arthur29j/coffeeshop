@@ -2,9 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Your Place</title>
+
+    <!-- CSS ____________________________________________________________ -->
+    <link rel="stylesheet" href="static/css/coffeeshop.css">
+
+    <!-- Fonts __________________________________________________________ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap" rel="stylesheet">
 </head>
 <body>
+    <h1>Welcome to Your Place!</h1>
+
     <form action="/order" method="post">
         <input type="text" name="customer_name" placeholder="ENTER NAME">
         <select name="drink">
@@ -28,5 +40,8 @@
 
         <input type="submit" value="Submit">
     </form>
+
+    <img src="/static/img/coffee_drinks.jpg" alt="Coffee drinks" width="80%">
+    <p>Image by <a href="https://www.freepik.com/free-vector/colorful-coffee-cup-setflat-style_1544839.html">Freepik</a></p>
 </body>
 </html>
